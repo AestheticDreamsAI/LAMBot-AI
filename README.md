@@ -1,4 +1,4 @@
-# Simple Language Action Model (LAM) Chatbot
+# LAMBot-AI
 
 This project implements a simple Language Action Model (LAM) chatbot using C# and ML.NET. The chatbot can recognize user intents from natural language inputs and perform specific actions, such as launching applications, based on the recognized intents.
 
@@ -21,8 +21,8 @@ This project implements a simple Language Action Model (LAM) chatbot using C# an
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/SimpleLAMChatbot.git
-    cd SimpleLAMChatbot
+    git clone https://github.com/yourusername/LAMBot-AI.git
+    cd LAMBot-AI
     ```
 
 2. **Install the required NuGet packages:**
