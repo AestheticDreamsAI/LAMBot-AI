@@ -9,6 +9,8 @@ This project implements a simple Language Action Model (LAM) chatbot using C# an
 - **Response Generation**: Provides predefined responses for each recognized intent.
 - **Model Persistence**: Saves the trained model to a file and loads it for future use, avoiding the need to retrain.
 
+Combined with OpenAI's ChatGPT or other large language models (LLMs), this can become a powerful A.I. capable of controlling and launching programs via commands.
+
 ## Getting Started
 
 ### Prerequisites
