@@ -146,7 +146,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) - Machine Learning framework for .NET
 - [Newtonsoft.Json](https://www.newtonsoft.com/json) - JSON framework for .NET
-
----
-
-Replace `"https://github.com/yourusername/SimpleLAMChatbot.git"` with the actual URL of your GitHub repository. This README provides a comprehensive overview of the project, installation instructions, usage details, and other important information that can help users and contributors understand and work with your project.
