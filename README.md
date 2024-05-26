@@ -37,7 +37,7 @@ This project implements a simple Language Action Model (LAM) chatbot using C# an
 
 1. **Prepare the `intents.json` file:**
 
-    Create a file named `intents.json` in the project directory with the following content:
+    Create a file named `intents.json` in the project data directory with the following content:
 
     ```json
     {
