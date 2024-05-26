@@ -51,7 +51,7 @@ class Program
         { 
             // Load the model from the file
             model = mlContext.Model.Load(".\\model\\model.bin", out var modelInputSchema);
-            Console.WriteLine("Model loaded from .\\model\\model.zip");
+            Console.WriteLine("Model loaded from .\\model\\model.bin");
         }
         else
         {
