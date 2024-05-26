@@ -37,17 +37,21 @@ class Program
 {
     static void Main(string[] args)
     {
-        var intents = LoadIntents("intents.json");
+        if (!File.Exists(".\\data\\"))
+            Directory.CreateDirectory(".\\data\\");
+
+        if (!File.Exists(".\\model\\"))
+            Directory.CreateDirectory(".\\model\\");
+        var intents = LoadIntents(".\\data\\intents.json");
 
         var mlContext = new MLContext();
         ITransformer model;
-
         // Check if the model file exists
-        if (File.Exists("model.bin"))
-        {
+        if (File.Exists(".\\model\\model.bin")) 
+        { 
             // Load the model from the file
-            model = mlContext.Model.Load("model.bin", out var modelInputSchema);
-            Console.WriteLine("Model loaded from model.zip");
+            model = mlContext.Model.Load(".\\model\\model.bin", out var modelInputSchema);
+            Console.WriteLine("Model loaded from .\\model\\model.zip");
         }
         else
         {
@@ -64,8 +68,8 @@ class Program
             model = pipeline.Fit(dataView);
 
             // Save the model to a file
-            mlContext.Model.Save(model, dataView.Schema, "model.bin");
-            Console.WriteLine("Model trained and saved to model.bin");
+            mlContext.Model.Save(model, dataView.Schema, ".\\model\\model.bin");
+            Console.WriteLine("Model trained and saved to .\\model\\model.bin");
         }
 
         Console.WriteLine("Chatbot started. Type 'exit' to quit.");
