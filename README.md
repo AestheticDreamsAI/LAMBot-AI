@@ -1,7 +1,3 @@
-Natürlich! Hier ist ein Beispiel für eine README-Datei, die Sie für Ihr GitHub-Projekt verwenden können:
-
----
-
 # Simple Language Action Model (LAM) Chatbot
 
 This project implements a simple Language Action Model (LAM) chatbot using C# and ML.NET. The chatbot can recognize user intents from natural language inputs and perform specific actions, such as launching applications, based on the recognized intents.
